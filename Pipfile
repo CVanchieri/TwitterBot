@@ -7,11 +7,9 @@ verify_ssl = true
 
 [packages]
 pandas = "*"
-numpy = "*"
-regex = "*"
-tweepy = "==3.9.0"
-python-dotenv = "==0.14.0"
-docker = "*"
+datetime = "*"
+tweepy = "*"
+python-dotenv = "*"
 
 [requires]
 python_version = "3.8"
