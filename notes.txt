@@ -1,5 +1,0 @@
-https://dylancastillo.co/how-to-make-a-twitter-bot-for-free/
-
-run bot 
-python entrypoint.py
-
