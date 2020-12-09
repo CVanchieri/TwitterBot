@@ -13,6 +13,7 @@ python-dotenv = "*"
 psycopg2-binary = "*"
 sqlalchemy = "*"
 regex = "*"
+numpy = "*"
 
 [requires]
 python_version = "3.8"
