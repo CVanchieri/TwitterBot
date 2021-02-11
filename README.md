@@ -1,15 +1,9 @@
 # Twitter Bot Using Python and AWS Lambda
 
-![Python](https://img.shields.io/badge/Python-v3.8.3-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue) ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/_dylancastillo.svg?style=social&label=Follow%20%40_dylancastillo)](https://twitter.com/_dylancastillo)
+![Python](https://img.shields.io/badge/Python-v3.8.3-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue) ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 
-This a simple template you can use to build a twitter bot using Python and an AWS Lambda Function. I used it to create [@dereksiversbot](https://twitter.com/dereksiversbot). Learn how to make your own [here.](https://dylancastillo.co/how-to-make-a-twitter-bot-for-free/)
- 
-Why build a bot this way?
- 
- 1. It's quick and easy 
- 2. You have full control over the bot's actions
- 3. It only uses services from AWS free tier (but see [limitations](#limitations) first)
- 
+A simple template you can use to build a twitter bot using Python and an AWS Lambda Function. 
+
 ## Pre-requisites
 
 To build and use the bot, you'll need to:
@@ -35,7 +29,7 @@ CONSUMER_KEY=<YOUR_CONSUMER_KEY_HERE>
 CONSUMER_SECRET=<YOUR_CONSUMER_SECRET_HERE>
 ```
 5. Make changes in the logic of the bot by modyifing `src/lambda_function.py`
-6. Test your changes locally by running `python entrypoint.py` from the root directory of your project
+6. Test your changes locally by running `python runbot.py` from the root directory of your project
 
 ## How to deploy
 
@@ -54,7 +48,7 @@ Once you are happy with your bot:
 Read this before using the bot:
 
 - This is free unless you go crazy with it or use **custom events for triggering** the Lambda Function. Check the [AWS Free Tier](https://aws.amazon.com/free/) if you have any questions. Use it at your own risk!
-- Current logic is very simple. The bot will post a random tweet (excluding its last 3 tweets). If you want something more complex, you'll need to add it on your own.
+- Current logic is very simple. This bot will search the hashtags set and store them in an AWS RDS database, this is also connected to a flask app for live deployment of the data. [live link](https://portfolioprojects.herokuapp.com/twitterbot)
 
 ## Attributions
 
