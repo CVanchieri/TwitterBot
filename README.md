@@ -1,4 +1,4 @@
-# Twitter Bot Using Python and AWS Lambda
+# Twitter Bot Pulling Data Science Tweets Using Python and AWS Lambda Function 
 
 ![Python](https://img.shields.io/badge/Python-v3.8.3-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue) ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 
@@ -51,5 +51,4 @@ Read this before using the bot:
 - Current logic is very simple. This bot will search the hashtags set and store them in an AWS RDS database, this is also connected to a flask app for live deployment of the data. [live link](https://portfolioprojects.herokuapp.com/twitterbot)
 
 ## Attributions
-
-The `createlambdalayer.sh` script comes from [this repository](https://github.com/aws-samples/aws-lambda-layer-create-script).
+I personally followed this tutorial [here](https://dylancastillo.co/how-to-make-a-twitter-bot-for-free/)
